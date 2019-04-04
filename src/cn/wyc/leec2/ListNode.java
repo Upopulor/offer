@@ -1,4 +1,4 @@
-package cn.wyc.leec;
+package cn.wyc.leec2;
 
 public class ListNode {
 
