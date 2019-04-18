@@ -5,16 +5,17 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Demo18 {
+	//四数之和
 	public static List<List<Integer>> fourSum(int[] nums, int target) {
 		List<List<Integer>> res = new ArrayList<List<Integer>>();
 		if(nums == null) return res;
 		int len = nums.length;
 		Arrays.sort(nums);
-		for(int i = 0 ; i < len-3 ; i++) {
-			if(i > 0 && nums[i]==nums[i-1]) continue;
+		for(int i = 0 ; i < len-3 ; i++) {  //  1  3(len-4)  4(len-3)  7(len-2)  8(len-1) 这里取到3 故<len-3
+			if(i > 0 && nums[i]==nums[i-1]) continue;  //重复的向前推
 			for(int j = i+1 ; j < len - 2 ; j++) {
 				if(j > i+1 && nums[j] == nums[j-1]) continue; // j > i+1 不会跳过i之后的第一个相同的数字了
-				int left = j + 1 , right = len - 1;
+				int left = j + 1 , right = len - 1;  //从第3个个和第4个数开始左右遍历
 				while(left < right) {
 					int sum = nums[i] + nums[j] + nums[left] + nums[right];
 					if(sum == target) {

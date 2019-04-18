@@ -3,6 +3,7 @@ package cn.wyc.leec2;
 import cn.wyc.leec2.ListNode;
 
 public class Demo19 {
+	//删除链表倒数第n个
 	//-->26
 	public ListNode removeNthFromEnd(ListNode head, int n) {
 		if(head == null || n == 0) return head;

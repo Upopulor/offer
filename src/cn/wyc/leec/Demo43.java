@@ -11,13 +11,13 @@ public class Demo43 {
         for(int i = alen ; i >= 0 ; i--) {
         	for(int j = blen ; j >= 0 ; j--) {
         		int mul = (num1.charAt(i)-'0')*(num2.charAt(j)-'0');
-        		mul += res[i+j+1];
-        		res[i+j] += mul/10;
+        		mul += res[i+j+1]; //mul+ res[i+j+1] =低位总和
+        		res[i+j] += mul/10; //乘积只占两位
         		res[i+j+1] = mul%10;
         	}
         }
         StringBuilder sd = new StringBuilder();
-        int i = 0;
+        int i = 0;  //050066
         // 去掉前导0
         while(i < res.length-1 && res[i] == 0) 
             i++;

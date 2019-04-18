@@ -3,6 +3,7 @@ package cn.wyc.leec;
 import java.util.Stack;
 
 public class Demo234 {
+	//234╩ьнда╢╠М
 	public static boolean isPalindrome(ListNode head) {
         if(head == null||head.next == null) {
         	return true;

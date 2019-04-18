@@ -1,6 +1,7 @@
 package cn.wyc.leec;
 
 public class Demo67 {
+	//二进制求和
 	public static String addBinary(String a, String b) {
         if(a == null || b == null) {
         	return null;
@@ -12,11 +13,11 @@ public class Demo67 {
         String ff = "";
         int carry = 0;
         while(aalen >= 0 || bblen >=0) {
-        	int m = (aalen>=0?aa[aalen--]-'0':0);
+        	int m = (aalen>=0?aa[aalen--]-'0':0); //每次取出一个字符，转为数字，若无法取出字符则按0处理
         	int n = (bblen>=0?bb[bblen--]-'0':0);
         	int sum = m + n + carry;
-        	ff = sum%2+ff;
-        	carry = sum/2;
+        	ff = sum%2+ff;   //对2取余即为当前位的数字
+        	carry = sum/2;   // 对2取商即为当前进位的值
         }
         return carry == 1?"1"+ff:ff;
     }

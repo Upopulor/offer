@@ -1,6 +1,7 @@
 package cn.wyc.leec;
 
 public class Demo415 {
+	//给定两个字符串形式的非负整数 num1 和num2 ，计算它们的和。
 	public static String addStrings(String num1, String num2) {
         if(num1 == null || num2 == null) {
         	return null;

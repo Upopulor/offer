@@ -1,6 +1,8 @@
 package cn.wyc.leec;
 
 public class Demo8 {
+	//请你来实现一个 atoi 函数，使其能将字符串转换成整数。
+	//首先，该函数会根据需要丢弃无用的开头空格字符，直到寻找到第一个非空格的字符为止。
 	public static int myAtoi2(String str) {//budui
         if(str.length()<=0) {
         	return 0;

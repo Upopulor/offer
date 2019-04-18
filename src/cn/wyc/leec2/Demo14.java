@@ -2,6 +2,7 @@ package cn.wyc.leec2;
 
 public class Demo14 {
 	public static String longestCommonPrefix(String[] strs) {
+		//最长公共前缀
 		String res = "";
         if(strs == null  || strs.length == 0) return res;
         for(int i = 0 ; i < strs[0].length() ; i++) {

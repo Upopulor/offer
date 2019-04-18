@@ -2,6 +2,7 @@ package cn.wyc.leec;
 
 public class Demo5 {
 	public static String longestPalindrome(String s) {
+		//给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。
 		//超时
         if(s.length() < 2) {
         	return s;

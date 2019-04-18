@@ -1,6 +1,7 @@
 package cn.wyc.leec;
 
 public class Demo342 {
+	//4µÄÃÝ
 	public static boolean isPowerOfFour(int num) {
         if(num == 4) return true;
         int count = 0;
